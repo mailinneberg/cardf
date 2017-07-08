@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:foregroundTint="@color/bt_black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aleksandrtitov.cardform4.SystemWindow">
+
+    <TextView
+        android:id="@+id/enter_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Entercard"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/bt_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enter_card"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bt_visa" />
+
+    <ImageView
+        android:id="@+id/bt_mastercard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_visa"
+        android:layout_below="@+id/enter_card"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginStart="-4dp"
+        android:layout_toEndOf="@+id/bt_visa"
+        android:layout_toRightOf="@+id/bt_visa"
+        android:src="@drawable/bt_mastercard" />
+
+    <ImageView
+        android:id="@+id/bt_amex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_mastercard"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginStart="-2dp"
+        android:layout_toEndOf="@+id/bt_mastercard"
+        android:layout_toRightOf="@+id/bt_mastercard"
+        android:src="@drawable/bt_amex" />
+
+    <com.example.cardformlib.view.CardEditText
+        android:id="@+id/bt_card_form_card_number"
+        style="@style/bt_card_form_field"
+        android:layout_below="@+id/enter_card"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/bt_form_hint_card_number"
+        android:imeOptions="actionNext"
+        android:textSize="19sp" />
+
+    <com.example.cardformlib.view.MonthYearEditText
+        android:id="@+id/bt_card_form_expiration"
+        style="@style/bt_card_form_field"
+        android:layout_below="@+id/bt_visa"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/bt_form_hint_expiration"
+        android:imeOptions="actionNext"
+        android:maxLength="2"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:textSize="19sp" />
+
+    <com.example.cardformlib.view.CvvEditText
+        android:id="@+id/bt_card_form_cvv"
+        style="@style/bt_card_form_field"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bt_card_form_expiration"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="155dp"
+        android:hint="@string/bt_form_hint_cvv"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="2"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/googlePlay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/googleplay" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="167dp"
+        android:background="@color/bt_geen"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

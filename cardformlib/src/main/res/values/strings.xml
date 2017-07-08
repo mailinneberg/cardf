@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="app_name">cardlibrary</string>
+
+    <string name="save">SAVE</string>
+
+    <string name="bt_form_hint_card_number">Card Number</string>
+    <string name="bt_form_hint_expiration">Expiration</string>
+    <string name="bt_form_hint_cvv">CVV</string>
+
+    <string name="bt_default_action_label">Purchase</string>
+
+    <string name="is_valid">Valid</string>
+    <string name="in_valid">Not valid</string>
+    <string name="Entercard">Enter card details</string>
+</resources>
